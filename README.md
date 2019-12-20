@@ -15,12 +15,14 @@ npm install --save reactd3sunburst
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'reactd3sunburst'
+import Sunburst from 'reactd3sunburst'
 
-class Example extends Component {
+class App extends Component {
   render () {
+    const jsonData = getDataAsJson()
+
     return (
-      <MyComponent />
+      <Sunburst data={jsonData}/>
     )
   }
 }
@@ -29,3 +31,7 @@ class Example extends Component {
 ## License
 
 MIT © [roeezolantz](https://github.com/roeezolantz)
+
+## License
+
+This project is a fork of @vkbansal's sunburst chart
